@@ -1,0 +1,39 @@
+Source: qtaccountsservice
+Priority: optional
+Maintainer: Rohan Garg <rohangarg@kubuntu.org>
+Build-Depends: debhelper (>= 9), cmake,
+ qtbase5-dev,
+ qtdeclarative5-dev
+Standards-Version: 3.9.5
+Section: libs
+Homepage: http://www.maui-project.org/
+
+Package: libqtaccountsservice-qt5-dev
+Section: libdevel
+Architecture: any
+Depends: libqtaccountsservice0 (= ${binary:Version}), ${misc:Depends}
+Description: Development header files for the qtaccoutnsservice library
+ This package installs the development header files for libqtaccountsservice0
+ 
+
+Package: libqtaccountsservice-qt5-0.1.2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: accountsservice
+Description: addon module that wraps AccountsService for Qt applications
+ Addon module that wraps AccountsService for Qt applications
+
+Package: libqtaccountsservice-dbg
+Section: debug
+Architecture: any
+Depends: libqtaccountsservice-qt5-0.1.2 (= ${binary:Version}), ${misc:Depends}
+Description: debug package for libqtaccountsservice0 library
+ This package installs the debugging symbols for the libqtaccountsservice0
+ library.
+
+Package: qml-module-hawaii-qtaccountsservice
+Architecture: any
+Depends: libqtaccountsservice-qt5-0.1.2 (= ${binary:Version}), ${misc:Depends}
+Description: qml module provided by qtaccoutnsservice
+ This package provides a QML module that can be used by UI interfaces in Qt
+ to interact with the libqtaccountsservice-qt5-0.1.2 library.

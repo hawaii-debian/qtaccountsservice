@@ -1,0 +1,3 @@
+usr/include/*
+usr/lib/*/cmake/QtAccountsService/*
+usr/lib/*/libqtaccountsservice-qt5.so

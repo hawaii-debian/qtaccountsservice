@@ -1,0 +1,5 @@
+{
+    "type" : "git",
+    "url" : "git://github.com/hawaii-desktop/qtaccountsservice",
+    "branch" : "master"
+}

@@ -1,0 +1,5 @@
+qtaccountsservice (0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 18 Dec 2014 18:23:38 +0100
